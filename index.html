@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizio JS</title>
+
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .container{
+        height: 100vh;
+        background-color: lightblue;
+        display: flex;
+        color: green;
+      }
+
+      .row{
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <h1 id="info">
+        </h1>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var name = prompt('Nome');
+      var surname = prompt('Cognome');
+      var color = prompt('Colore Preferito');
+      console.log(name, surname, color);
+
+      document.getElementById('info').innerHTML = name + surname + color + 19;
+    </script>
+  </body>
+</html>
